@@ -33,7 +33,7 @@ app.use("/all",(req,res) =>{
     connection.query(sql_query,(err,result) =>{
         if (err) {
             console.log("DATABASE UNCONNECTED")
-            if (connection = null)
+            if (connection == null)
                 initcon()
            // throw err
         };
