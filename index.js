@@ -36,7 +36,6 @@ function initcon(){
 app.use("/all",(req,res) =>{
     try {
     const sql_query = "select * from location";
-        console.log("ADENTRO: " + connection)
     connection.query(sql_query,(err,result) =>{
         if (err) {
             
