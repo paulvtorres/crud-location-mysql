@@ -123,6 +123,7 @@ app.post('/',(req, res) => {
                 message: "successfull"
             }
             res.status(200).send(responseData);
+            console.log("OK: " + phoneNum)
         }
     });
 });
